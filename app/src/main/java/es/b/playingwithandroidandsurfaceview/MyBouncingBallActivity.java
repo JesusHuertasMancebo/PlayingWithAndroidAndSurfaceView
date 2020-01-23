@@ -10,29 +10,21 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 
-public class MyBallActivity extends MainMenu {
+public class MyBouncingBallActivity extends MainMenu {
 
-    public MyBallSurfaceView myBallSurfaceView;
+    public static MyBallSurfaceView myBallSurfaceView;
+    public static MyBallSurfaceView myBouncingBallSurfaceView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_my_ball);
+        //setContentView(R.layout.activity_my_bouncing_ball);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         myBallSurfaceView = new MyBallSurfaceView(this);
         setContentView(myBallSurfaceView);
 
-
-    }
-
-    protected void onPause() {
-        super.onPause();
-        //Stopping the thread
-
-        if (myBallSurfaceView != null){
-            myBallSurfaceView.stopThread();
-        }
     }
 
 }

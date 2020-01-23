@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".MyBouncingBallActivity"
+            android:label="@string/title_activity_my_bouncing_ball"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".MyBallActivity"
             android:label="@string/title_activity_my_ball"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

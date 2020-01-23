@@ -14,7 +14,7 @@ public class MainMenu extends AppCompatActivity {
         return true;
     }
 
-    @Override
+    /*@Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -32,7 +32,36 @@ public class MainMenu extends AppCompatActivity {
             startActivity(intent);
             return true;
         }
+        if (id == R.id.bouncingBallActivity) {
+            Intent intent = new Intent(this,MyBouncingBallActivity.class);
+            startActivity(intent);
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
+    }*/
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId(); Intent intent=null;
+        if (id == R.id.home) {// Stopping other threads
+            if (MyBouncingBallActivity.myBouncingBallSurfaceView !=null)
+                MyBouncingBallActivity.myBouncingBallSurfaceView.stopThread();
+            intent = new Intent (this, MainActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        }
+        if (id == R.id.ballActivity) { // Stopping other threads
+            if (MyBouncingBallActivity.myBouncingBallSurfaceView !=null)
+                MyBouncingBallActivity.myBouncingBallSurfaceView.stopThread();
+            intent = new Intent (this, MyBallActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        }
+        if (id == R.id.bouncingBallActivity) {
+            intent = new Intent (this, MyBouncingBallActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        }
+        startActivity(intent); //Starting the new activity
+        return true;
     }
 }
+

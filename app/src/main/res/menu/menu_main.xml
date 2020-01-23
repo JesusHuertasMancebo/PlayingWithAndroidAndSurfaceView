@@ -13,4 +13,9 @@
         android:orderInCategory="100"
         android:title="@string/ballActivity"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/bouncingBallActivity"
+        android:orderInCategory="100"
+        android:title="@string/bouncingBallActivity"
+        app:showAsAction="never" />
 </menu>

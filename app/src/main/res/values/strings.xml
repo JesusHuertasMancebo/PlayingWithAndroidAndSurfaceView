@@ -4,4 +4,6 @@
     <string name="home">Home</string>
     <string name="title_activity_my_ball">MyBallActivity</string>
     <string name="ballActivity">My Ball Activity</string>
+    <string name="title_activity_my_bouncing_ball">MyBouncingBallActivity</string>
+    <string name="bouncingBallActivity">My Bouncing Ball Activity</string>
 </resources>
