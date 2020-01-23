@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PlayingWithAndroidAndSurfaceView</string>
+    <string name="action_settings">Settings</string>
+    <string name="home">Home</string>
+    <string name="title_activity_my_ball">MyBallActivity</string>
+    <string name="ballActivity">My Ball Activity</string>
+</resources>

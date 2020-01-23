@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="es.b.playingwithandroidandsurfaceview.MainActivity">
+    <item
+        android:id="@+id/home"
+        android:orderInCategory="100"
+        android:title="@string/home"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/ballActivity"
+        android:orderInCategory="100"
+        android:title="@string/ballActivity"
+        app:showAsAction="never" />
+</menu>
